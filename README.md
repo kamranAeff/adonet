@@ -2,12 +2,12 @@
 
 > select [Id],[Name],[SmallName] from [dbo].[Sizes]
 
-IN SQL                   C# (adonet)		<br/><br/>
+IN SQL &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; C# (adonet)		<br/><br/>
 
-DataBase                 DataSet		<br/>
-Tables                   DataTable		<br/>
-Row					     DataRow		<br/>
-Column				     Column		<br/>
+DataBase &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DataSet		<br/>
+Tables &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DataTable		<br/>
+Row &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; DataRow		<br/>
+Column &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Column		<br/>
 
 - [Ado Net Introduction](https://www.javatpoint.com/ado-net-introduction)
 - [ConnectionString](https://www.connectionstrings.com)
