@@ -1,0 +1,7 @@
+﻿namespace ConsoleAppWorkingWithDataSet
+{
+}
+
+namespace ConsoleAppWorkingWithDataSet
+{
+}
