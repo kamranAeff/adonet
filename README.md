@@ -16,4 +16,4 @@ Column &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Column		<br/>
 > Data Source=.;Database=ShopDb;Trusted_Connection=True;Encrypt=false;
 
 ### SqlServer Authentification
-> Data Source=.;Database=ShopDb;User Id=sa;Password=query;Encrypt=false;
+> Data Source=.;Database=ShopDb;User Id=adonet;Password=query;Encrypt=false;
