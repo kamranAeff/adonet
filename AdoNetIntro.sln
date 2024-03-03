@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{44FE409D-D96F-4ED1-9C71-3EAD973A30E6}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		disconnected-architecture-ado-net.jpg = disconnected-architecture-ado-net.jpg
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppAdoNetIntro", "ConsoleAppAdoNetIntro\ConsoleAppAdoNetIntro.csproj", "{9D82188E-3607-4392-B535-36D9EC015EA0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9D82188E-3607-4392-B535-36D9EC015EA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D82188E-3607-4392-B535-36D9EC015EA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D82188E-3607-4392-B535-36D9EC015EA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D82188E-3607-4392-B535-36D9EC015EA0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5C855DC4-C5A3-4448-917C-9FAEC15502BF}
+	EndGlobalSection
+EndGlobal
