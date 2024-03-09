@@ -14,7 +14,13 @@ namespace ConsoleAppOrm
             {
                 Console.WriteLine($"{brand.Id} {brand.Name}");
             }
+            Console.WriteLine("#########################################");
+            var products = db.Set<Product>().ToList();
 
+            foreach (var product in products)
+            {
+                Console.WriteLine($"{product.Id} {product.Name}");
+            }
 
             Console.WriteLine("Complated!");
 
