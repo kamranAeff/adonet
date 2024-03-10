@@ -21,6 +21,7 @@ namespace ConsoleAppOrm.Models.Configurations
             builder.Property(m => m.Description).HasColumnType("nvarchar(max)").IsRequired();
             builder.Property(m => m.Rate).HasColumnType("decimal").HasPrecision(18, 2).IsRequired();
             builder.Property(m => m.BrandId).HasColumnType("int").IsRequired();
+            builder.Property(m => m.CategoryId).HasColumnType("int").IsRequired();
 
             builder.ConfigureAuditable();
 
@@ -33,6 +34,13 @@ namespace ConsoleAppOrm.Models.Configurations
                 .WithMany()
                 .HasForeignKey(m => m.BrandId)
                 .HasPrincipalKey(m => m.Id)
+                .OnDelete(DeleteBehavior.NoAction);
+
+
+            builder.HasOne<Category>()
+                .WithMany()
+                .HasPrincipalKey(m => m.Id)
+                .HasForeignKey(m => m.CategoryId)
                 .OnDelete(DeleteBehavior.NoAction);
 
         }

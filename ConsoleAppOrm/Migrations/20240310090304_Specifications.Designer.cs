@@ -4,6 +4,7 @@ using ConsoleAppOrm.Models.DataContexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ConsoleAppOrm.Migrations
 {
     [DbContext(typeof(SchoolDbContext))]
-    partial class SchoolDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240310090304_Specifications")]
+    partial class Specifications
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -243,24 +246,6 @@ namespace ConsoleAppOrm.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Specifications", (string)null);
-                });
-
-            modelBuilder.Entity("ConsoleAppOrm.Models.Entities.SpecificationValue", b =>
-                {
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("SpecificationId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Value")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar");
-
-                    b.HasKey("ProductId", "SpecificationId");
-
-                    b.ToTable("SpecificationValues", (string)null);
                 });
 
             modelBuilder.Entity("ConsoleAppOrm.Models.Entities.Student", b =>
