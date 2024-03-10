@@ -15,6 +15,20 @@ namespace ConsoleAppOrm.Models.Configurations
 
             builder.HasKey(m => new { m.ProductId, m.SpecificationId });
             builder.ToTable("SpecificationValues");
+
+
+            builder.HasOne<Product>()
+                .WithMany()
+                .HasPrincipalKey(m => m.Id)
+                .HasForeignKey(m => m.ProductId)
+                .OnDelete(DeleteBehavior.NoAction);
+
+            builder.HasOne<Specification>()
+                .WithMany()
+                .HasPrincipalKey(m => m.Id)
+                .HasForeignKey(m => m.SpecificationId)
+                .OnDelete(DeleteBehavior.NoAction);
+
         }
     }
 }

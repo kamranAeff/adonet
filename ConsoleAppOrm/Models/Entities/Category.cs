@@ -1,4 +1,5 @@
 ﻿using ConsoleAppOrm.Models.Commons;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ConsoleAppOrm.Models.Entities
 {

@@ -14,9 +14,12 @@ namespace ConsoleAppOrm.Concrates
             this.db = db;
         }
 
-        public IQueryable<T> GetAll()
+        public IQueryable<T> GetAll(Expression<Func<T, bool>> expression = null)
         {
-            return db.Set<T>().AsQueryable();
+            if (expression is null)
+                return db.Set<T>().AsQueryable();
+
+            return db.Set<T>().Where(expression);
         }
 
         public T? Get(Expression<Func<T, bool>> expression = null)

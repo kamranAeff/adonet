@@ -28,8 +28,5 @@ namespace ConsoleAppOrm.Models.DataContexts
 
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(SchoolDbContext).Assembly);
         }
-
-        public DbSet<Student> Students { get; set; }
-        public DbSet<Brand> Brands { get; set; }
     }
 }

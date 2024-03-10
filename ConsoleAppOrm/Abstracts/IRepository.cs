@@ -8,7 +8,7 @@ namespace ConsoleAppOrm.Abstracts
         T Add(T entry);
         T Edit(T entry);
         void Remove(T entry);
-        IQueryable<T> GetAll();
+        IQueryable<T> GetAll(Expression<Func<T, bool>> expression = null);
         T? Get(Expression<Func<T, bool>> expression = null);
         int Save();
     }
